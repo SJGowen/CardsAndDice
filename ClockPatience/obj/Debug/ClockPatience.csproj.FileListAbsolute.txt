@@ -1,0 +1,14 @@
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\bin\Debug\ClockPatience.exe
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\bin\Debug\ClockPatience.pdb
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\bin\Debug\GameUtils.dll
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\bin\Debug\GameUtils.pdb
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\obj\Debug\ClockPatience.csprojResolveAssemblyReference.cache
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\obj\Debug\ClockPatience.exe
+C:\Dev\CSharp\CSharp6FP\CardAndDice\ClockPatience\obj\Debug\ClockPatience.pdb
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\bin\Debug\ClockPatience.exe
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\bin\Debug\ClockPatience.pdb
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\bin\Debug\GameUtils.dll
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\bin\Debug\GameUtils.pdb
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\obj\Debug\ClockPatience.csprojResolveAssemblyReference.cache
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\obj\Debug\ClockPatience.exe
+C:\Dev\CSharp\Katas\CardAndDice\ClockPatience\obj\Debug\ClockPatience.pdb

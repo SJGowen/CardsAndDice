@@ -1,0 +1,16 @@
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\bin\Debug\CardTest.exe.config
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\bin\Debug\CardTest.exe
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\bin\Debug\CardTest.pdb
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\bin\Debug\GameUtils.dll
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\bin\Debug\GameUtils.pdb
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\obj\Debug\CardsPrint.csprojResolveAssemblyReference.cache
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\obj\Debug\CardTest.exe
+C:\Dev\CSharp\CSharp6FP\CardAndDice\CardTest\obj\Debug\CardTest.pdb
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\bin\Debug\CardTest.exe.config
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\bin\Debug\CardTest.exe
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\bin\Debug\CardTest.pdb
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\bin\Debug\GameUtils.dll
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\bin\Debug\GameUtils.pdb
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\obj\Debug\CardsPrint.csprojResolveAssemblyReference.cache
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\obj\Debug\CardTest.exe
+C:\Dev\CSharp\Katas\CardAndDice\CardTest\obj\Debug\CardTest.pdb

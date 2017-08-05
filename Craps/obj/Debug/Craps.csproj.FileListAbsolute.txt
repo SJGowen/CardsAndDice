@@ -1,0 +1,8 @@
+C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\Craps.exe.config
+C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\Craps.exe
+C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\Craps.pdb
+C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\GameUtils.dll
+C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\GameUtils.pdb
+C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.csprojResolveAssemblyReference.cache
+C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.exe
+C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.pdb
