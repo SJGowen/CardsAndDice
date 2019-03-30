@@ -1,9 +1,10 @@
-﻿namespace Cards
+﻿namespace GameUtils
 {
     public static class CardSets
     {
-        public static string[] faces = { "Ace", "Deuce", "Three", "Four", "Five", "Six",
-                "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
-        public static string[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
+        public static readonly string[] Faces = 
+        { "Ace", "Deuce", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
+
+        public static readonly string[] Suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
     }
 }

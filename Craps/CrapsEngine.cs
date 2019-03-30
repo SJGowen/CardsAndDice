@@ -1,52 +1,45 @@
-﻿using Dices;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using GameUtils;
 
 namespace Craps
 {
     public class CrapsEngine
     {
-        private List<int> validThrows = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        private readonly List<int> _validThrows = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         public enum Status { Continue, Win, Loose }
 
         public Status GetStatusFromFirstThrow(int firstThrowPoints)
         {
-            if (!validThrows.Contains(firstThrowPoints)) throw new ArgumentOutOfRangeException("Invalid first throw points");
-            var result = Status.Continue;
+            if (!_validThrows.Contains(firstThrowPoints)) throw new ArgumentOutOfRangeException(nameof(firstThrowPoints));
             switch ((Dice.DiceNames)firstThrowPoints)
             {
                 case Dice.DiceNames.Seven:
                 case Dice.DiceNames.YoLeven:
-                    result = Status.Win;
-                    break;
+                    return Status.Win;
                 case Dice.DiceNames.SnakeEyes:
                 case Dice.DiceNames.Trey:
                 case Dice.DiceNames.BoxCars:
-                    result = Status.Loose;
-                    break;
+                    return Status.Loose;
                 default:
-                    result = Status.Continue;
                     Console.WriteLine($"Score to get is {firstThrowPoints}");
-                    break;
+                    return Status.Continue;
             }
-            return result;
         }
 
-        public Status GetStatusFromLaterThow(int firstThrowPoints, int laterThrowPoints)
+        public Status GetStatusFromLaterThrow(int firstThrowPoints, int laterThrowPoints)
         {
-            if (!validThrows.Contains(firstThrowPoints)) throw new ArgumentOutOfRangeException("Invalid first throw points");
-            if (!validThrows.Contains(laterThrowPoints)) throw new ArgumentOutOfRangeException("Invalid later throw points");
-            var result = Status.Continue;
+            if (!_validThrows.Contains(firstThrowPoints)) throw new ArgumentOutOfRangeException(nameof(firstThrowPoints));
+            if (!_validThrows.Contains(laterThrowPoints)) throw new ArgumentOutOfRangeException(nameof(firstThrowPoints));
             if (laterThrowPoints == firstThrowPoints)
             {
-                result = Status.Win;
+                return Status.Win;
             }
             else if (laterThrowPoints == (int)Dice.DiceNames.Seven)
             {
-                result = Status.Loose;
+                return Status.Loose;
             }
-            return result;
+            return Status.Continue; 
         }
     }
 }

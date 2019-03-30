@@ -1,12 +1,13 @@
 ﻿using System;
+using GameUtils;
 
-namespace Cards
+namespace ClockPatience
 {
-    class ClockPatience
+    internal static class ClockPatience
     {
-        static Card[,] FaceDownCards = new Card[4, 13];
+        private static readonly Card[,] FaceDownCards = new Card[4, 13];
 
-        static void Main(string[] args)
+        private static void Main()
         {
             var myDeckOfCards = new DeckOfCards();
             myDeckOfCards.Shuffle();
@@ -23,22 +24,16 @@ namespace Cards
                 cardInPlay = GetClockFaceCard(face);
             }
 
-            if (faceUpCards < 52)
-            {
-                Console.WriteLine($"You have turned over {faceUpCards} Cards...");
-            }
-            else
-            {
-                Console.WriteLine("Congratulations... You beat the 'CLOCK'...");
-            }
-            Console.ReadLine();
+            Console.WriteLine(faceUpCards < 52
+                ? $"You have turned over {faceUpCards} Cards..."
+                : "Congratulations... You beat the 'CLOCK'...");
         }
 
         private static void DealCards(DeckOfCards myDeckOfCards)
         {
-            for (int set = 0; set < 4; set++)
+            for (var set = 0; set < 4; set++)
             {
-                for (int hour = 0; hour < 13; hour++)
+                for (var hour = 0; hour < 13; hour++)
                 {
                     FaceDownCards[set, hour] = myDeckOfCards.DealCard();
                 }
@@ -47,18 +42,16 @@ namespace Cards
 
         private static Card GetClockFaceCard(string cardToGet)
         {
-            Card result = null;
-            var numericalCardToGet = Array.IndexOf(CardSets.faces, cardToGet);
+            var numericalCardToGet = Array.IndexOf(CardSets.Faces, cardToGet);
             var set = 3;
             while ((set >= 0) && (FaceDownCards[set, numericalCardToGet] == null))
             {
                 set--;
             }
-            if (set >= 0)
-            {
-                result = FaceDownCards[set, numericalCardToGet];
-                FaceDownCards[set, numericalCardToGet] = null;
-            }
+
+            if (set < 0) return null;
+            var result = FaceDownCards[set, numericalCardToGet];
+            FaceDownCards[set, numericalCardToGet] = null;
             return result;
         }
     }

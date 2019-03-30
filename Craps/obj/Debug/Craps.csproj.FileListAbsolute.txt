@@ -6,3 +6,13 @@ C:\Dev\CSharp\Katas\CardAndDice\Craps\bin\Debug\GameUtils.pdb
 C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.csprojResolveAssemblyReference.cache
 C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.exe
 C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Craps.pdb
+C:\Dev\C#\CardsAndDice\Craps\bin\Debug\Craps.exe.config
+C:\Dev\C#\CardsAndDice\Craps\bin\Debug\Craps.exe
+C:\Dev\C#\CardsAndDice\Craps\bin\Debug\Craps.pdb
+C:\Dev\C#\CardsAndDice\Craps\bin\Debug\GameUtils.dll
+C:\Dev\C#\CardsAndDice\Craps\bin\Debug\GameUtils.pdb
+C:\Dev\C#\CardsAndDice\Craps\obj\Debug\Craps.csprojAssemblyReference.cache
+C:\Dev\C#\CardsAndDice\Craps\obj\Debug\Craps.csproj.CoreCompileInputs.cache
+C:\Dev\C#\CardsAndDice\Craps\obj\Debug\Craps.csproj.CopyComplete
+C:\Dev\C#\CardsAndDice\Craps\obj\Debug\Craps.exe
+C:\Dev\C#\CardsAndDice\Craps\obj\Debug\Craps.pdb

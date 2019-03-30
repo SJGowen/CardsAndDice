@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Dices
+namespace GameUtils
 {
     public class Dice
     {
-        private Random randomNumbers = new Random();
+        private readonly Random _randomNumbers = new Random();
 
         public enum DiceNames
         {
@@ -17,7 +17,7 @@ namespace Dices
 
         public int RollADice()
         {
-            var die = randomNumbers.Next(1, 7);
+            var die = _randomNumbers.Next(1, 7);
 
             Console.WriteLine($"Player rolled {die}");
             return die;
@@ -25,8 +25,8 @@ namespace Dices
 
         public int Roll2Dice()
         {
-            var die1 = randomNumbers.Next(1, 7);
-            var die2 = randomNumbers.Next(1, 7);
+            var die1 = _randomNumbers.Next(1, 7);
+            var die2 = _randomNumbers.Next(1, 7);
 
             var sum = die1 + die2;
 

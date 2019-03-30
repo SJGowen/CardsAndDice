@@ -1,23 +1,23 @@
-﻿using Dices;
-using System;
+﻿using System;
+using GameUtils;
 using static Craps.CrapsEngine;
 
 namespace Craps
 {
-    class Craps
+    internal static class Craps
     {
-        private static Dice dice = new Dice();
+        private static readonly Dice Dice = new Dice();
 
-        static void Main(string[] args)
+        private static void Main()
         {
-            var firstThrowPoints = dice.Roll2Dice();
+            var firstThrowPoints = Dice.Roll2Dice();
             var game = new CrapsEngine();
             var gameStatus = game.GetStatusFromFirstThrow(firstThrowPoints);
 
             while (gameStatus == Status.Continue)
             {
-                var laterTrowPoints = dice.Roll2Dice();
-                gameStatus = game.GetStatusFromLaterThow(firstThrowPoints, laterTrowPoints);
+                var laterTrowPoints = Dice.Roll2Dice();
+                gameStatus = game.GetStatusFromLaterThrow(firstThrowPoints, laterTrowPoints);
             }
 
             var message = (gameStatus == Status.Win) ? "Player Wins" : "Player Looses";

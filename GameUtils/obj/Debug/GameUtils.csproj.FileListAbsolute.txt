@@ -7,3 +7,8 @@ C:\Dev\CSharp\Katas\CardAndDice\GameUtils\bin\Debug\GameUtils.pdb
 C:\Dev\CSharp\Katas\CardAndDice\GameUtils\obj\Debug\GameUtils.csprojResolveAssemblyReference.cache
 C:\Dev\CSharp\Katas\CardAndDice\GameUtils\obj\Debug\GameUtils.dll
 C:\Dev\CSharp\Katas\CardAndDice\GameUtils\obj\Debug\GameUtils.pdb
+C:\Dev\C#\CardsAndDice\GameUtils\bin\Debug\GameUtils.dll
+C:\Dev\C#\CardsAndDice\GameUtils\bin\Debug\GameUtils.pdb
+C:\Dev\C#\CardsAndDice\GameUtils\obj\Debug\GameUtils.csproj.CoreCompileInputs.cache
+C:\Dev\C#\CardsAndDice\GameUtils\obj\Debug\GameUtils.dll
+C:\Dev\C#\CardsAndDice\GameUtils\obj\Debug\GameUtils.pdb

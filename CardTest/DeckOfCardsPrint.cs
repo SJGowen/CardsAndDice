@@ -1,10 +1,11 @@
 ﻿using System;
+using GameUtils;
 
-namespace Cards
+namespace CardTest
 {
-    class DeckOfCardsPrint
+    static class DeckOfCardsPrint
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             var deckOfCards = new DeckOfCards();
             deckOfCards.Shuffle();

@@ -1,19 +1,18 @@
 ﻿using Craps;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-using static Dices.Dice;
+using static GameUtils.Dice;
 
 namespace TestGames
 {
     [TestClass]
     public class TestCraps
     {
-        private CrapsEngine game; // = new CrapsEngine();
+        private CrapsEngine _game;
 
         [TestInitialize()]
         public void Initialize()
         {
-            game = new CrapsEngine();
+            _game = new CrapsEngine();
         }
 
         [TestMethod]
@@ -38,7 +37,7 @@ namespace TestGames
         [DataRow(DiceNames.YoLeven)]
         public void TestWinOnFirstThrow(int score)
         {
-            Assert.AreEqual(CrapsEngine.Status.Win, game.GetStatusFromFirstThrow(score));
+            Assert.AreEqual(CrapsEngine.Status.Win, _game.GetStatusFromFirstThrow(score));
         }
 
         [TestMethod]
@@ -47,7 +46,7 @@ namespace TestGames
         [DataRow(DiceNames.BoxCars)]
         public void TestLooseOnFirstThrow(int score)
         {
-            Assert.AreEqual(CrapsEngine.Status.Loose, game.GetStatusFromFirstThrow(score));
+            Assert.AreEqual(CrapsEngine.Status.Loose, _game.GetStatusFromFirstThrow(score));
         }
 
         [TestMethod]
@@ -59,7 +58,7 @@ namespace TestGames
         [DataRow(10)]
         public void TestContinueOnFirstThrow(int score)
         {
-            Assert.AreEqual(CrapsEngine.Status.Continue, game.GetStatusFromFirstThrow(score));
+            Assert.AreEqual(CrapsEngine.Status.Continue, _game.GetStatusFromFirstThrow(score));
         }
 
         [TestMethod]
@@ -71,7 +70,7 @@ namespace TestGames
         [DataRow(10, 10)]
         public void TestWinOnSecondThrow(int throw1, int throw2)
         {
-            Assert.AreEqual(CrapsEngine.Status.Win, game.GetStatusFromLaterThow(throw1, throw2));
+            Assert.AreEqual(CrapsEngine.Status.Win, _game.GetStatusFromLaterThrow(throw1, throw2));
         }
 
         [TestMethod]
@@ -83,7 +82,7 @@ namespace TestGames
         [DataRow(10, DiceNames.Seven)]
         public void TestLooseOnSecondThrow(int throw1, int throw2)
         {
-            Assert.AreEqual(CrapsEngine.Status.Loose, game.GetStatusFromLaterThow(throw1, throw2));
+            Assert.AreEqual(CrapsEngine.Status.Loose, _game.GetStatusFromLaterThrow(throw1, throw2));
         }
 
         [TestMethod]
@@ -99,7 +98,7 @@ namespace TestGames
         [DataRow(DiceNames.BoxCars, DiceNames.YoLeven)]
         public void TestContinueOnSecondThrow(int throw1, int throw2)
         {
-            Assert.AreEqual(CrapsEngine.Status.Continue, game.GetStatusFromLaterThow(throw1, throw2));
+            Assert.AreEqual(CrapsEngine.Status.Continue, _game.GetStatusFromLaterThrow(throw1, throw2));
         }
 
         [TestMethod]
@@ -108,7 +107,7 @@ namespace TestGames
         [ExpectedException(typeof(System.ArgumentOutOfRangeException))]
         public void TestInvalidFirstThrow(int throw1)
         {
-            game.GetStatusFromFirstThrow(throw1);
+            _game.GetStatusFromFirstThrow(throw1);
         }
 
         [TestMethod]
@@ -119,7 +118,7 @@ namespace TestGames
         [ExpectedException(typeof(System.ArgumentOutOfRangeException))]
         public void TestInvalidLaterThrow(int throw1, int throw2)
         {
-            game.GetStatusFromLaterThow(throw1, throw2);
+            _game.GetStatusFromLaterThrow(throw1, throw2);
         }
     }
 }

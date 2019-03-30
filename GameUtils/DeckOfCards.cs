@@ -1,44 +1,37 @@
 ﻿using System;
 
-namespace Cards
+namespace GameUtils
 {
     public class DeckOfCards
     {
-        private static Random randomNumbers = new Random();
+        private static readonly Random RandomNumbers = new Random();
         private const int NumberOfCards = 52;
-        private Card[] Deck = new Card[NumberOfCards];
-        private int currentCard = 0;
+        private readonly Card[] _deck = new Card[NumberOfCards];
+        private int _currentCard;
 
         public DeckOfCards()
         {
-            for (int count = 0; count < Deck.Length; count++)
+            for (var count = 0; count < _deck.Length; count++)
             {
-                Deck[count] = new Card(CardSets.faces[count % 13], CardSets.suits[count / 13]);
+                _deck[count] = new Card(CardSets.Faces[count % 13], CardSets.Suits[count / 13]);
             }
         }
 
         public void Shuffle()
         {
-            currentCard = 0;
-            for (var card = 0; card < Deck.Length; card++)
+            _currentCard = 0;
+            for (var card = 0; card < _deck.Length; card++)
             {
-                var swap = randomNumbers.Next(NumberOfCards);
-                Card temp = Deck[card];
-                Deck[card] = Deck[swap];
-                Deck[swap] = temp;
+                var swap = RandomNumbers.Next(NumberOfCards);
+                var temp = _deck[card];
+                _deck[card] = _deck[swap];
+                _deck[swap] = temp;
             }
         }
 
         public Card DealCard()
         {
-            if (currentCard < Deck.Length)
-            {
-                return Deck[currentCard++];
-            }
-            else
-            {
-                return null;
-            }
+            return _currentCard < _deck.Length ? _deck[_currentCard++] : null;
         }
     }
 }
