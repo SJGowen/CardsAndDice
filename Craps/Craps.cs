@@ -22,7 +22,7 @@ namespace Craps
 
             var message = (gameStatus == Status.Win) ? "Player Wins" : "Player Looses";
             Console.WriteLine(message);
+            Console.ReadKey();
         }
-
     }
 }

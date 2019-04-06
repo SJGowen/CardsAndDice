@@ -9,9 +9,9 @@ namespace ClockPatience
 
         private static void Main()
         {
-            var myDeckOfCards = new DeckOfCards();
-            myDeckOfCards.Shuffle();
-            DealCards(myDeckOfCards);
+            var deckOfCards = new DeckOfCards();
+            deckOfCards.Shuffle();
+            Deal13SetsOf4(deckOfCards);
 
             var faceUpCards = 0;
             var face = "King";
@@ -24,18 +24,25 @@ namespace ClockPatience
                 cardInPlay = GetClockFaceCard(face);
             }
 
-            Console.WriteLine(faceUpCards < 52
-                ? $"You have turned over {faceUpCards} Cards..."
-                : "Congratulations... You beat the 'CLOCK'...");
+            if (faceUpCards == 52)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("CONGRATULATIONS... You beat the 'CLOCK'...");
+            }
+            else
+            {
+               Console.WriteLine($"You have turned over {faceUpCards} Cards...");
+            }
+            Console.ReadKey();
         }
 
-        private static void DealCards(DeckOfCards myDeckOfCards)
+        private static void Deal13SetsOf4(DeckOfCards deckOfCards)
         {
             for (var set = 0; set < 4; set++)
             {
                 for (var hour = 0; hour < 13; hour++)
                 {
-                    FaceDownCards[set, hour] = myDeckOfCards.DealCard();
+                    FaceDownCards[set, hour] = deckOfCards.DealCard();
                 }
             }
         }

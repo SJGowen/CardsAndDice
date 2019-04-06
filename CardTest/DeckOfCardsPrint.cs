@@ -17,6 +17,7 @@ namespace CardTest
                     Console.WriteLine();
                 }
             }
+            Console.ReadKey();
         }
     }
 }
