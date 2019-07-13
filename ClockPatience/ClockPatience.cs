@@ -24,15 +24,10 @@ namespace ClockPatience
                 cardInPlay = GetClockFaceCard(face);
             }
 
-            if (faceUpCards == 52)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("CONGRATULATIONS... You beat the 'CLOCK'...");
-            }
-            else
-            {
-               Console.WriteLine($"You have turned over {faceUpCards} Cards...");
-            }
+            Console.ForegroundColor = faceUpCards == 52 ? ConsoleColor.Yellow : ConsoleColor.Red;
+            Console.WriteLine(faceUpCards == 52 
+                ? "CONGRATULATIONS... You beat the 'CLOCK'..." 
+                : $"You have turned over {faceUpCards} Cards...");
             Console.ReadKey();
         }
 

@@ -15,6 +15,9 @@ C:\Dev\CSharp\Katas\CardAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestP
 C:\Dev\CSharp\Katas\CardAndDice\TestGames\obj\Debug\TestGames.csprojResolveAssemblyReference.cache
 C:\Dev\CSharp\Katas\CardAndDice\TestGames\obj\Debug\TestGames.dll
 C:\Dev\CSharp\Katas\CardAndDice\TestGames\obj\Debug\TestGames.pdb
+C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\TestGames.dll
 C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\TestGames.pdb
 C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Craps.exe
@@ -31,6 +34,3 @@ C:\Dev\C#\CardsAndDice\TestGames\obj\Debug\TestGames.csproj.CoreCompileInputs.ca
 C:\Dev\C#\CardsAndDice\TestGames\obj\Debug\TestGames.csproj.CopyComplete
 C:\Dev\C#\CardsAndDice\TestGames\obj\Debug\TestGames.dll
 C:\Dev\C#\CardsAndDice\TestGames\obj\Debug\TestGames.pdb
-C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Dev\C#\CardsAndDice\TestGames\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

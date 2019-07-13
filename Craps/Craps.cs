@@ -20,8 +20,8 @@ namespace Craps
                 gameStatus = game.GetStatusFromLaterThrow(firstThrowPoints, laterTrowPoints);
             }
 
-            var message = (gameStatus == Status.Win) ? "Player Wins" : "Player Looses";
-            Console.WriteLine(message);
+            Console.ForegroundColor = (gameStatus == Status.Win) ? ConsoleColor.Yellow : ConsoleColor.Red;
+            Console.WriteLine(gameStatus == Status.Win ? "Player Wins" : "Player Looses");
             Console.ReadKey();
         }
     }
