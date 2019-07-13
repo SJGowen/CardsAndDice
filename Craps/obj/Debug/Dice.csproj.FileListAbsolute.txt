@@ -1,1 +1,0 @@
-C:\Dev\CSharp\Katas\CardAndDice\Craps\obj\Debug\Dice.csprojResolveAssemblyReference.cache
