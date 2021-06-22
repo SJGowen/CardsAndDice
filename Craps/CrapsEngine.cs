@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameUtils;
+using static GameUtils.Dice;
 
 namespace Craps
 {
     public class CrapsEngine
     {
-        private readonly List<int> _validThrows = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        private readonly List<int> _validThrows = new() { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         public enum Status { Continue, Win, Loose }
 
         public Status GetStatusFromFirstThrow(int firstThrowPoints)
