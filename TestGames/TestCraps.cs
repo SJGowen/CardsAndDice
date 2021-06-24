@@ -20,7 +20,7 @@ namespace TestGames
         [InlineData(DiceNames.Seven, 7)]
         [InlineData(DiceNames.YoLeven, 11)]
         [InlineData(DiceNames.BoxCars, 12)]
-        public void TestDiceThrows1(DiceNames rollName, int score) =>
+        public void TestDiceThrows(DiceNames rollName, int score) =>
             Assert.Equal(rollName, (DiceNames)score);
 
         [Theory]
@@ -73,7 +73,7 @@ namespace TestGames
         [InlineData(8, 6)]
         [InlineData(9, 10)]
         [InlineData(10, 9)]
-        public void TestContinueOnSecondThrow1(int throw1, int throw2) =>
+        public void TestContinueOnSecondThrow(int throw1, int throw2) =>
             Assert.Equal(CrapsEngine.Status.Continue, _game.GetStatusFromLaterThrow(throw1, throw2));
 
         [Theory]
@@ -81,7 +81,7 @@ namespace TestGames
         [InlineData(DiceNames.Trey, DiceNames.SnakeEyes)]
         [InlineData(DiceNames.YoLeven, DiceNames.BoxCars)]
         [InlineData(DiceNames.BoxCars, DiceNames.YoLeven)]
-        public void TestContinueOnSecondThrow2(DiceNames throw1, DiceNames throw2) =>
+        public void TestContinueOnSecondThrowDiceNames(DiceNames throw1, DiceNames throw2) =>
             Assert.Equal(CrapsEngine.Status.Continue, _game.GetStatusFromLaterThrow((int)throw1, (int)throw2));
 
         [Theory]
