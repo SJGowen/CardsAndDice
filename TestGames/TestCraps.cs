@@ -7,7 +7,7 @@ namespace TestGames
 {
     public class TestCraps
     {
-        private CrapsEngine _game;
+        private readonly CrapsEngine _game;
 
         public TestCraps()
         {
